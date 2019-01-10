@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //DB Connection Start
 mongoose.Promise =global.Promise;
-mongoose.connect('mongodb://localhost:27017/Node'  ,{useNewUrlParser:true}, function(err) 
+mongoose.connect('mongodb://nodeakash:nodeakash1@ds047474.mlab.com:47474/node'  ,{useNewUrlParser:true}, function(err) 
 {
   if(err)
     console.log('Error');
