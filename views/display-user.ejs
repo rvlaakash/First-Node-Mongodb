@@ -1,0 +1,50 @@
+<html>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+            <style>
+                        body
+                        {
+                            background-image: url("../images/20181209_132.jpg" );
+                            background-size: 1380px 800px;
+                            
+                        
+                        }
+                        </style>
+<body>
+
+<%- include('header'); -%>
+
+        <h1>Display Table</h1>
+
+        <% if(user_array.length>0) { %>
+
+           <table border="2">
+               <tr>
+                   <th>ID</th> 
+                   <th>Name</th>
+                   <th>Email</th>
+                   <th>Mobile No.</th>
+                   <th>Action</th>
+                </tr>
+                
+          <% for(var i=0 ; i<user_array.length ; i++) { %>
+            <tr>
+                  <td><%= i+1 %></td>
+                  <td><%=user_array[i].user_name %></td>
+                  <td><%=user_array[i].user_email %></td>
+                  <td><%=user_array[i].user_mobile %></td>
+                  <td>
+                        <a href='/edit/<%=user_array[i]._id %>'>Edit</a>
+                        <a href='/delete/<%=user_array[i]._id %>'>Delete</a>
+                        <a href='/show/<%=user_array[i]._id %>'>Show</a>
+                  </td>
+            </tr>
+
+                
+          <% } %>
+           </table>
+        <% } else { %>
+             No Record Found..
+        <% } %>     
+
+</body>
+</html>

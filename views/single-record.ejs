@@ -1,0 +1,34 @@
+
+
+<html>
+<head>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+    <body>
+            <%- include('header'); -%>
+        <table border="1">
+               
+                  <tr>
+                      <td>ID</td>
+                      <td><%= user_array._id%></td>
+
+                  </tr>
+                  <tr>
+                        <td>Name</td>
+                        <td><%= user_array.user_name%></td>
+  
+                    </tr>
+                    <tr>
+                            <td>Email</td>
+                            <td><%= user_array.user_email%></td>
+      
+                        </tr>
+                    <tr>
+                            <td>Mobile No.</td>
+                            <td><%= user_array.user_mobile%></td>
+      
+                        </tr>
+         
+             </table>
+    </body>
+</html>

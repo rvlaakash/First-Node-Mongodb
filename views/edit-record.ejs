@@ -1,0 +1,36 @@
+<html>
+
+<body>
+    <%- include('header');  -%>
+        <form method="post">
+        <table border="1">
+               
+                  <tr>
+                      <td>Name</td>
+                      <td><input type="text" name="user_name"
+                           value=" <%= user_array.user_name %> " required> </td>
+
+                  </tr>
+                  <tr>
+                        <td>email</td>
+                        <td><input type="text" name="user_email"
+                             value=" <%= user_array.user_email %> " required> </td>
+  
+                    </tr>
+                  <tr>
+                        <td>Mobile</td>
+                        <td><input type="text" name="user_mobile"
+                             value=" <%= user_array.user_mobile %> " required> </td>
+  
+                    </tr>
+                    <tr>
+                            
+                            <td><input type="submit">
+                                <input type="button" value="Display"
+                                onclick="window.location='/display-user';"></td>
+                        </tr>
+         
+             </table>
+        </form>
+    </body>
+</html>

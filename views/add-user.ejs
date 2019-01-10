@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>ADD USER</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <%-include('header')-%>
+        <div>
+            <form method="POST" action="/add-user">
+                Name : <input type="text" name="name"/><br/><br/>
+                Email : <input type="email" name="email"/><br/><br/>
+                Number : <input type="text" name="number"/><br/><br/>
+                <input type="submit" name="submit"/><br/><br/>
+            </form>
+        </div>
+    </body>
+</html>
