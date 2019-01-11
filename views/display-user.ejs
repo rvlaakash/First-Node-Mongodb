@@ -31,7 +31,7 @@
             <tr>
                   <td><%= i+1 %></td>
                   <td><%=user_array[i].user_name %></td>
-                  <td><%=user_array[i].user_email %></td>
+                  <td><a href="mailto:<%=user_array[i].user_email %>"><%=user_array[i].user_email %></a></td>
                   <td><%=user_array[i].user_mobile %></td>
                   <td>
                         <a href='/edit/<%=user_array[i]._id %>'>Edit</a>
